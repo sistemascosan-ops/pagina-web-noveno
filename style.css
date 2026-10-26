@@ -1,0 +1,185 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2869
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* Estilos Generales y Reseteo */\
+* \{\
+    margin: 0;\
+    padding: 0;\
+    box-sizing: border-box;\
+    scroll-behavior: smooth;\
+\}\
+\
+body \{\
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
+    color: #333;\
+    line-height: 1.6;\
+    background-color: #f8f9fa;\
+\}\
+\
+/* Navbar Fijo */\
+.navbar \{\
+    position: fixed;\
+    top: 0;\
+    left: 0;\
+    width: 100%;\
+    background-color: #ffffff;\
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\
+    display: flex;\
+    justify-content: space-between;\
+    align-items: center;\
+    padding: 1rem 5%;\
+    z-index: 1000;\
+\}\
+\
+.nav-logo \{\
+    font-size: 1.2rem;\
+    font-weight: bold;\
+    color: #2c3e50;\
+\}\
+\
+.nav-links \{\
+    list-style: none;\
+    display: flex;\
+    gap: 2rem;\
+\}\
+\
+.nav-links a \{\
+    text-decoration: none;\
+    color: #555;\
+    font-weight: 600;\
+    transition: color 0.3s ease;\
+\}\
+\
+.nav-links a:hover \{\
+    color: #007bff;\
+\}\
+\
+/* Secciones */\
+.section \{\
+    padding: 100px 5% 60px 5%;\
+    min-height: 100vh;\
+    display: flex;\
+    align-items: center;\
+\}\
+\
+.alt-bg \{\
+    background-color: #ffffff;\
+\}\
+\
+.container \{\
+    max-width: 1200px;\
+    margin: 0 auto;\
+    width: 100%;\
+\}\
+\
+.section h2 \{\
+    font-size: 2.2rem;\
+    color: #2c3e50;\
+    margin-bottom: 15px;\
+\}\
+\
+.section p \{\
+    font-size: 1.1rem;\
+    color: #666;\
+    margin-bottom: 40px;\
+    max-width: 800px;\
+\}\
+\
+/* Grid Interno de Secciones (Imagen + Tabla) */\
+.section-grid \{\
+    display: grid;\
+    grid-template-columns: 1fr 1.2fr;\
+    gap: 40px;\
+    align-items: center;\
+\}\
+\
+.section-grid.reverse \{\
+    grid-template-columns: 1.2fr 1fr;\
+\}\
+\
+.section-grid.reverse .section-img \{\
+    order: 2;\
+\}\
+\
+.section-img \{\
+    width: 100%;\
+    height: 350px;\
+    object-fit: cover;\
+    border-radius: 12px;\
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);\
+\}\
+\
+/* Estilos de las Tablas */\
+.table-container \{\
+    overflow-x: auto;\
+\}\
+\
+table \{\
+    width: 100%;\
+    border-collapse: collapse;\
+    background: #ffffff;\
+    border-radius: 8px;\
+    overflow: hidden;\
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);\
+\}\
+\
+th, td \{\
+    padding: 15px;\
+    text-align: left;\
+    border-bottom: 1px solid #edf2f7;\
+\}\
+\
+th \{\
+    background-color: #007bff;\
+    color: white;\
+    font-weight: 600;\
+\}\
+\
+tr:hover \{\
+    background-color: #f1f5f9;\
+\}\
+\
+/* Insignias de Alerta */\
+.badge \{\
+    padding: 4px 10px;\
+    border-radius: 20px;\
+    font-size: 0.85rem;\
+    font-weight: bold;\
+    color: white;\
+\}\
+\
+.badge.high \{\
+    background-color: #e53e3e;\
+\}\
+\
+.badge.medium \{\
+    background-color: #dd6b20;\
+\}\
+\
+/* Footer */\
+footer \{\
+    text-align: center;\
+    padding: 30px;\
+    background-color: #2c3e50;\
+    color: white;\
+    font-size: 0.9rem;\
+\}\
+\
+/* Dise\'f1o Responsivo (Pantallas Peque\'f1as) */\
+@media (max-width: 900px) \{\
+    .section-grid, .section-grid.reverse \{\
+        grid-template-columns: 1fr;\
+    \}\
+    \
+    .section-grid.reverse .section-img \{\
+        order: 0;\
+    \}\
+\
+    .nav-links \{\
+        display: none; /* Simplificado para m\'f3viles */\
+    \}\
+\}}
